@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PMN INDIA - Industrial Equipment Supplier</title>
+    
+    <!-- Tailwind CSS (Design ke liye) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Icons (Chitra ke liye) -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <style>
+        html { scroll-behavior: smooth; }
+    </style>
+</head>
+<body class="bg-slate-50 font-sans text-slate-900">
+
+    <!-- Top Blue Bar -->
+<div class="bg-blue-950 text-white py-2 px-4 text-sm">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center">
+        
+        <!-- Left: EEPC Certification -->
+        <div class="text-center md:text-left font-medium mb-1 md:mb-0">
+            Certified by Engineering Export Promotion Council
+        </div>
+
+        <!-- Right: ISO Certification -->
+        <div class="text-center md:text-right font-semibold">
+            ISO 9001:2015 Certified
+        </div>
+
+    </div>
+</div>
+
+
+    <!-- Navigation Bar -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex items-center gap-2">
+		 <img src="mono1.png" alt="My JPG image" width="85">
+                    <!-- Brand Text -->
+                <div class="leading-tight">
+                    <h1 class="text-xl md:text-2xl font-extrabold text-slate-900 tracking-wide">
+                        PMN <span class="text-blue-600">INDIA</span>
+                    </h1>
+                    <p class="text-xs text-slate-500 hidden sm:block">
+                        Global Industrial Equipment Supplier
+                    </p>
+                </div>
+            </div>
+
+		
+		<!-- Desktop Menu (Updated with Email beside Contact Us) -->
+                <div class="hidden md:flex items-center space-x-6">
+                    <a href="#home" class="text-slate-600 hover:text-blue-600 font-medium">Home</a>
+                    <a href="#products" class="text-slate-600 hover:text-blue-600 font-medium">Products</a>
+                    <a href="#about" class="text-slate-600 hover:text-blue-600 font-medium">About Us</a>
+                    
+                    <!-- Email ID beside Contact Us -->
+                    <a href="mailto:info@pmnindia.com" class="text-blue-600 font-bold flex items-center gap-1 hover:text-blue-800">
+                        <i data-lucide="mail" class="w-4 h-4"></i> info@pmnindia.com
+                    </a>
+                    
+                    <a href="#contact" class="bg-blue-600 text-white px-5 py-2 rounded-lg hover:bg-blue-700 transition font-semibold">Contact Us</a>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button onclick="toggleMenu()" class="text-slate-600 hover:text-slate-900 p-2">
+                        <i data-lucide="menu" class="w-6 h-6"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-slate-100 px-4 pt-2 pb-6 space-y-1">
+            <a href="#home" onclick="toggleMenu()" class="block w-full text-left px-3 py-3 text-slate-600 font-medium">Home</a>
+            <a href="#products" onclick="toggleMenu()" class="block w-full text-left px-3 py-3 text-slate-600 font-medium">Products</a>
+            <a href="#about" onclick="toggleMenu()" class="block w-full text-left px-3 py-3 text-slate-600 font-medium">About Us</a>
+            <!-- Email in Mobile Menu -->
+            <a href="mailto:info@pmnindia.com" class="block w-full text-left px-3 py-3 text-blue-600 font-bold flex items-center gap-2">
+                <i data-lucide="mail" class="w-4 h-4"></i> info@pmnindia.com
+            </a>
+            <a href="#contact" onclick="toggleMenu()" class="block w-full text-left px-3 py-3 text-blue-600 font-bold">Contact Us</a>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+<section id="home" class="relative bg-slate-900 py-24 overflow-hidden">
+
+    <!-- DOT BACKGROUND (UNCHANGED) -->
+    <div class="absolute inset-0 opacity-20">
+        <div class="absolute inset-0 bg-[radial-gradient(#3b82f6_1px,transparent_1px)] [background-size:16px_16px]"></div>
+    </div>
+
+    <div class="relative max-w-7xl mx-auto px-4">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+
+            <!-- LEFT CONTENT -->
+            <div>
+                <h2 class="text-4xl md:text-6xl font-extrabold text-white mb-6 leading-tight">
+                    Reliable Industrial Equipment 
+                    <span class="text-blue-400">Solutions</span>
+                </h2>
+
+                <p class="text-slate-300 text-xl max-w-2xl mb-10">
+                    Your trusted supplier for Valves, Mechanical Seals, HDPE Pipes, PP Products, Fittings & Fire Safety Equipment in Indore.
+                </p>
+
+                <!-- VIEW CATALOGUE BUTTON -->
+                <a href="#products"
+                   class="relative inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-semibold overflow-hidden shine-btn pulse-btn transition">
+                    View Catalogue
+                    <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                </a>
+            </div>
+
+            <!-- RIGHT LOGO WITH GLOW + FLOAT -->
+            <div class="flex justify-center md:justify-end relative">
+                <!-- Glow -->
+                <div class="absolute w-80 h-80 md:w-[480px] md:h-[480px] rounded-full bg-blue-500/20 blur-3xl"></div>
+
+                <img 
+                    src="mono1.png" 
+                    alt="PMN INDIA Logo"
+                    class="relative w-72 md:w-[420px] opacity-95 drop-shadow-2xl floating-logo"
+                >
+            </div>
+
+        </div>
+    </div>
+</section>
+<style>
+/* FLOATING LOGO (DESKTOP) */
+@keyframes float-desktop {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-14px); }
+    100% { transform: translateY(0); }
+}
+
+/* FLOATING LOGO (MOBILE - SLOWER & SUBTLE) */
+@keyframes float-mobile {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+    100% { transform: translateY(0); }
+}
+
+.floating-logo {
+    animation: float-desktop 6s ease-in-out infinite;
+}
+
+/* Mobile override */
+@media (max-width: 768px) {
+    .floating-logo {
+        animation: float-mobile 8s ease-in-out infinite;
+    }
+}
+
+/* BUTTON SHINE EFFECT */
+.shine-btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -75%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(
+        120deg,
+        transparent,
+        rgba(255,255,255,0.4),
+        transparent
+    );
+    transform: skewX(-20deg);
+}
+
+.shine-btn:hover::before {
+    animation: shine 1.2s;
+}
+
+@keyframes shine {
+    100% {
+        left: 125%;
+    }
+}
+
+/* BUTTON PULSE EFFECT */
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(59,130,246,0.6);
+    }
+    70% {
+        box-shadow: 0 0 0 15px rgba(59,130,246,0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(59,130,246,0);
+    }
+}
+
+.pulse-btn {
+    animation: pulse 3s infinite;
+}
+</style>
+
+
+
+
+    <!-- Products Section -->
+    <section id="products" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Our Product Range</h2>
+                <div class="w-20 h-1 bg-blue-600 mx-auto mb-4"></div>
+                <p class="text-slate-600 max-w-2xl mx-auto">We supply high-grade industrial components designed for durability.</p>
+            </div>
+            
+            <!-- Search Bar -->
+            <div class="max-w-md mx-auto mb-12 relative">
+                <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                    <i data-lucide="search" class="w-5 h-5 text-slate-400"></i>
+                </div>
+                <input type="text" id="searchInput" onkeyup="filterProducts()" 
+                    class="block w-full pl-10 pr-3 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none" 
+                    placeholder="Search products (e.g., Valves, Motors)...">
+            </div>
+
+            <!-- Product Grid -->
+            <div id="productGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Product Items will be inserted here by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl font-bold text-slate-900 mb-6">Why Choose PMN INDIA?</h2>
+                    <p class="text-slate-600 mb-6 leading-relaxed">
+                        Located in the strategic Sanwer Area Industrial of Indore, PMN INDIA is dedicated to empowering local industries with top-tier mechanical and electrical supplies.
+                    </p>
+                    <ul class="space-y-4 text-slate-700">
+                        <li class="flex items-center gap-3"><div class="w-2 h-2 bg-blue-600 rounded-full"></div>Wide range of inventory</li>
+                        <li class="flex items-center gap-3"><div class="w-2 h-2 bg-blue-600 rounded-full"></div>Strategic location in Indore</li>
+                        <li class="flex items-center gap-3"><div class="w-2 h-2 bg-blue-600 rounded-full"></div>Commitment to quality</li>
+                    </ul>
+                </div>
+                <div class="bg-slate-100 p-8 rounded-2xl border border-slate-200">
+                    <div class="flex items-start gap-4 mb-6">
+                        <i data-lucide="map-pin" class="text-blue-600 mt-1 w-6 h-6"></i>
+                        <div>
+                            <h4 class="font-bold text-slate-900">Our Location</h4>
+                            <p class="text-slate-600">Sanwer Road Industrial Area ,<br/>Indore, Madhya Pradesh 452001</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <i data-lucide="activity" class="text-blue-600 mt-1 w-10 h-10"></i>
+                        <div>
+                            <h4 class="font-bold text-slate-900">Industry Focus</h4>
+                            <p class="text-slate-600">Suitable for Water, Steam, Gas, Air, Thermal Oil in all Industries areas including Textile, Cement, Petrochemical, Oil & Gas, Pulp and Paper, Steel Industries, Pharmaceutical, Power Plant, Food & Beverages, Waste Water Treatment Plants, Automobiles and Many More.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-slate-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <h2 class="text-3xl font-bold mb-6">Get In Touch</h2>
+                    <p class="text-slate-300 mb-8">
+                        Ready to order or need a quote? Submit an inquiry below or visit our office.
+                    </p>
+                    <div class="bg-blue-600/20 p-6 rounded-xl border border-blue-500/30">
+                        <div class="flex items-start gap-4">
+                            <i data-lucide="map-pin" class="text-blue-400 mt-1 w-6 h-6"></i>
+                            <div>
+                                <h4 class="font-bold text-lg mb-2">Visit Office</h4>
+                                <p class="text-slate-300">Sanwer Road Industrial Area ,<br/>Indore, M.P. 452001</p>
+                                <a href="https://www.google.com/maps/search/?api=1&query=Sanwer+Industrial+Area+Road+Indore" target="_blank" class="text-blue-400 hover:text-blue-300 underline text-sm mt-2 inline-block">Open in Google Maps</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="bg-white text-slate-900 p-8 rounded-2xl shadow-xl">
+                    <h3 class="text-2xl font-bold mb-6">Send an Inquiry</h3>
+                    <form onsubmit="event.preventDefault(); alert('Thank you! Your inquiry has been noted. Please allow us some time to respond.');">
+                        <div class="space-y-4">
+                            <div>
+                                <label class="block text-sm font-medium text-slate-700 mb-1">Name</label>
+                                <input type="text" class="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none" placeholder="Your Name" required>
+                            </div>
+                       <div>
+        <label class="block text-sm font-medium text-slate-700 mb-1">Company Name</label>
+        <input type="text" name="company" required
+          class="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none"
+          placeholder="Your Company Name">
+      </div>
+                            <div>
+                                <label class="block text-sm font-medium text-slate-700 mb-1">Phone Number</label>
+                                <input type="tel" class="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none" placeholder="Your Mobile Number" required>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-slate-700 mb-1">E-Mail Address</label>
+                                <input type="email" class="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none" placeholder="Your Mail Address" required>
+                            </div>
+
+                            <div>
+                                <label class="block text-sm font-medium text-slate-700 mb-1">Product Requirement</label>
+                                <textarea rows="3" class="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none" placeholder="Which items do you need?" required></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 rounded-lg transition">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="bg-slate-950 text-slate-400 py-8 text-center border-t border-slate-800">
+        <p>&copy; 2024 PMN INDIA. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript Logic -->
+    <script>
+        // Product Data
+        const products = [
+            { title: "Industrial Valves", desc: "Ball, Gate, Globe, and Butterfly valves.", img: "https://th.bing.com/th/id/R.88191bb680d07c5859fb500c60dc3645?rik=NFcJ%2bpQeFo0GIw&riu=http%3a%2f%2fwww.pipingresources.com%2fwp-content%2fuploads%2f2016%2f05%2findustrial-valves.jpg&ehk=%2fAKG9BRXpCjKW%2fk4efoyaFW%2bV0er9fD1iCkVE0KVkOc%3d&risl=&pid=ImgRaw&r=0" },
+            { title: "Mechanical Seals", desc: "Durable seals for pumps and mixers.", img: "https://tse3.mm.bing.net/th/id/OIP.SPB34iapWQLDAN5JERhKEwHaE8?w=900&h=600&rs=1&pid=ImgDetMain&o=7&rm=3" },
+            { title: "Fire Safety Items", desc: "Extinguishers, hydrants, and hoses.", img: "https://th.bing.com/th/id/R.9efbd0f3eec6db5b1e8e5b5b2f08a493?rik=ykhbep%2f%2fWixOgQ&riu=http%3a%2f%2fwww.firecope.com.pk%2fwp-content%2fuploads%2f2021%2f06%2ffire-safety-fire-cope-640x282.jpg&ehk=D2gN1eiGQHOE7MJhS5Pxt7814%2ftDrqBBVNGe7mQCwY8%3d&risl=&pid=ImgRaw&r=0" },
+            { title: "Gauges", desc: "Pressure, Temperature, Vaccum, Compound Gauges.", img: "https://content.spiraxsarco.com/-/media/spiraxsarco/global/products/pipeline-ancillaries/pressure_gauge_installation_01.ashx?rev=61f2fac41c604e1cb1affc752e5296b6" },
+            { title: "Industrial trolleys & Wheels", desc: "Trolleys , Wheels, and Hand Pallet Trucks.", img: "https://image.made-in-china.com/2f0j00QWhcBsanYLgz/Barrow-Trolley-Cart-Steel-Utility-Mesh-Garden-Cart-with-4-Wheels.jpg" },
+        
+            { title: "Rotameter", desc: "Flow measurement for liquid/gas.", img: "https://tse3.mm.bing.net/th/id/OIP.dFFt-Cw2u7oyYl6H031K3gHaFj?rs=1&pid=ImgDetMain&o=7&rm=3" },
+            { title: "PTFE / PP / HDPE Products", desc: "Teflon rods, bushes, and sheets.", img: "https://aceprecisionceramics.co.uk/wp-content/uploads/2024/04/DSC02651.jpeg?v=1714485585" },
+            { title: "SS/MS Pipes & Fittings", desc: "SS Pipes, MS Pipes, and Fittings.", img: "https://tse2.mm.bing.net/th/id/OIP.NqCBRSgr75b4BXpIah79KgHaC1?rs=1&pid=ImgDetMain&o=7&rm=3" },
+            { title: "SS & MS Sheets", desc: "Stainless and Mild Steel sheets.", img: "https://tse3.mm.bing.net/th/id/OIP.tlcv1jcM4pSHSDPNBELoGwHaHa?w=1000&h=1000&rs=1&pid=ImgDetMain&o=7&rm=3" },
+        ];
+
+       function renderProducts(items) {
+    const grid = document.getElementById('productGrid');
+    grid.innerHTML = items.map(p => `
+        <div class="bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 border border-slate-100 overflow-hidden flex flex-col group">
+            <div class="h-48 overflow-hidden bg-slate-100 relative">
+                <img src="${p.img}" alt="${p.title}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+                <h3 class="text-xl font-bold text-slate-800 mb-2">${p.title}</h3>
+                <p class="text-slate-600 text-sm mb-4 flex-grow">${p.desc}</p>
+
+               ${
+    p.title === "Industrial Valves"
+    ? `<a href="valves.html"
+         class="text-blue-600 font-semibold text-sm hover:text-blue-800 self-start flex items-center gap-1">
+         Enquire Now <i data-lucide="arrow-right" class="w-4 h-4"></i>
+       </a>`
+
+    : p.title === "Mechanical Seals"
+    ? `<a href="Mechanical-Seals.html"
+         class="text-blue-600 font-semibold text-sm hover:text-blue-800 self-start flex items-center gap-1">
+         Enquire Now <i data-lucide="arrow-right" class="w-4 h-4"></i>
+       </a>`
+      : p.title === "Fire Safety Items"
+    ? `<a href="Fire-Safety.html"
+         class="text-blue-600 font-semibold text-sm hover:text-blue-800 self-start flex items-center gap-1">
+         Enquire Now <i data-lucide="arrow-right" class="w-4 h-4"></i>
+       </a>`
+      : p.title === "Gauges"
+    ? `<a href="Gauges.html"
+         class="text-blue-600 font-semibold text-sm hover:text-blue-800 self-start flex items-center gap-1">
+         Enquire Now <i data-lucide="arrow-right" class="w-4 h-4"></i>
+       </a>`
+      : p.title === "Industrial trolleys & Wheels"
+    ? `<a href="trolleys.html"
+         class="text-blue-600 font-semibold text-sm hover:text-blue-800 self-start flex items-center gap-1">
+         Enquire Now <i data-lucide="arrow-right" class="w-4 h-4"></i>
+       </a>`
+      : p.title === "Rotameter"
+    ? `<a href="Rotameter.html"
+         class="text-blue-600 font-semibold text-sm hover:text-blue-800 self-start flex items-center gap-1">
+         Enquire Now <i data-lucide="arrow-right" class="w-4 h-4"></i>
+       </a>`
+      : p.title === "PTFE / PP / HDPE Products"
+    ? `<a href="PTFE-PP-HDPE.html"
+         class="text-blue-600 font-semibold text-sm hover:text-blue-800 self-start flex items-center gap-1">
+         Enquire Now <i data-lucide="arrow-right" class="w-4 h-4"></i>
+       </a>`
+      : p.title === "SS/MS Pipes & Fittings"
+    ? `<a href="pipes-fittings.html"
+         class="text-blue-600 font-semibold text-sm hover:text-blue-800 self-start flex items-center gap-1">
+         Enquire Now <i data-lucide="arrow-right" class="w-4 h-4"></i>
+       </a>`
+      : p.title === "SS & MS Sheets"
+    ? `<a href="SS-MS-Sheets.html"
+         class="text-blue-600 font-semibold text-sm hover:text-blue-800 self-start flex items-center gap-1">
+         Enquire Now <i data-lucide="arrow-right" class="w-4 h-4"></i>
+       </a>`
+
+
+
+    : `<button
+         class="text-blue-600 font-semibold text-sm hover:text-blue-800 self-start flex items-center gap-1">
+         Enquire Now <i data-lucide="arrow-right" class="w-4 h-4"></i>
+       </button>`
+}
+
+            </div>
+        </div>
+    `).join('');
+    lucide.createIcons();
+}
+ 
+        // Search Filter
+        function filterProducts() {
+            const term = document.getElementById('searchInput').value.toLowerCase();
+            const filtered = products.filter(p => p.title.toLowerCase().includes(term));
+            renderProducts(filtered);
+        }
+
+        // Mobile Menu Toggle
+        function toggleMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+
+        // Initial Render
+        renderProducts(products);
+        lucide.createIcons();
+    </script>
+</body>
+</html>
